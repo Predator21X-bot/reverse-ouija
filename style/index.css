@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Monoton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    height: 100vh;
+}
+
+.grid{
+
+    display: grid;
+}
+
+.seperator{
+
+    height: 50px;
+}
+
+/*dimensions & alignments*/
+.center-align{
+
+    margin: auto;
+    width: 80%;
+}
+
+/*background colors*/
+.primary-color{
+
+    background-color: #022c43;
+
+    color: #fff;
+}
+
+.secondary-color{
+
+    background-color: #053f5e;
+
+    color: #fff;
+}
+
+.tertiary-color{
+
+    background-color: #115173;
+
+    color: #fff;
+}
+
+.other-color{
+
+    background-color: #ffd700;
+
+    color: #333;
+}
+
+.dark-color{
+
+    background-color: #333;
+
+    color: #fff
+}
+
+/*font families*/
+
+.creepy-font{
+
+    font-family: 'Creepster', cursive;
+}
+
+#header, #main, #footer{
+
+    position: relative;
+}
+
+#header{
+
+    grid-row: span 1;
+}
+
+#main{
+
+    grid-row: span 6;
+}
+
+#footer{
+
+    grid-row: span 0.5;
+}
+
+#primaryHeader, #primaryFooter{
+
+    height: 100%;
+}
+
+#primaryHeader{
+
+    box-shadow: 5px #ffe;
+
+    padding: 20px;
+}
+
+#primaryHeader h1{
+
+    font-size: 50px;
+    color: #ffd700
+}
+
+#instructions{
+
+	display: grid;
+	position: relative;
+	grid-template-columns: 1fr;
+	height: 100%;
+}
+
+#instructions .instructions-img-bg{
+
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	background: url('../images/reaper.png');
+	background-size: contain;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    z-index: 2;
+
+}
+
+#instructions .instructions-img-bg-snake{
+
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	background: url('../images/snake.gif');
+	background-size: contain;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: left;
+    z-index: 1;
+
+}
+
+#instructions .instructions-color-overlay{
+
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+    background-color: #053f5e;
+	opacity: 0.8;
+
+    z-index: 3;
+}
+
+#instructions #instructionsContent{
+
+	grid-row-start: 1;
+	z-index: 5;
+	grid-column-start: 1;
+	padding:50px;
+    line-height: 1.6em;
+}
+
+#instructions #instructionsContent #instructionList{
+
+        list-style: circle outside url(../images/demonic-list-marker-lg.gif);
+}
+
+#play{
+
+    border: none;
+    padding: 10px;
+    width: 100px;
+}
+
+#play:hover{
+
+    background: #fff;
+    color: #333;
+}
+
+#primaryFooter{
+
+    padding: 20px;
+}
+
+#primaryFooter #footerLinks{
+
+    list-style: none;
+}
+
+#primaryFooter #footerLinks .footer-link{
+
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+}
+
+#primaryFooter #footerLinks .footer-link:hover{
+
+    color: #ffd700;
+
+}
